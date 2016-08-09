@@ -370,10 +370,10 @@ public class Style {
      * @return
      */
     private static Drawable getCustomBackground(Context context,int backgroundColor,int radius){
-        int strokeWidth = 0; //3dp 边框宽度
-        int roundRadius = dip2px(context,radius); //8dp 圆角半径
-        int strokeColor = backgroundColor;//边框颜色
-        int fillColor = backgroundColor;//内部填充颜色
+        int strokeWidth = 0;
+        int roundRadius = dip2px(context,radius);
+        int strokeColor = backgroundColor;
+        int fillColor = backgroundColor;
 
         GradientDrawable gd = new GradientDrawable();//创建drawable
         gd.setColor(fillColor);
